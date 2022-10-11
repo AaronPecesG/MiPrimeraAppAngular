@@ -8,5 +8,6 @@ if (environment.production) {
   enableProdMode();
 }
 
+//Especificar cuál es el módulo raíz (Módulo que debe cargar la aplicación)
 platformBrowserDynamic().bootstrapModule(AppModule)
   .catch(err => console.error(err));
