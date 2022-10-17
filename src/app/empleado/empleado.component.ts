@@ -21,6 +21,13 @@ export class EmpleadoComponent implements OnInit {
 
   }
 
+  habilitacionCuadro=false;
+  usuRegistrado=false;
+
+  getRegistroUsuario(){
+    this.usuRegistrado=true;
+  }
+
   constructor() { }
 
   ngOnInit(): void {
