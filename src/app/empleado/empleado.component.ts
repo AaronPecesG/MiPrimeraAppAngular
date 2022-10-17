@@ -15,7 +15,11 @@ export class EmpleadoComponent implements OnInit {
   nombre="Aarón";
   apellido="Peces";
   edad=24;
-  //empresa="UCLM";
+  empresa="UCLM";
+
+  cambiaEmpresa(event:Event){
+    this.empresa=(<HTMLInputElement>event.target).value;
+  }
 
   llamaEmpresa(value:String){
 
