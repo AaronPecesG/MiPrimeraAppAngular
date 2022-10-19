@@ -10,6 +10,7 @@ export class AppComponent {
   nombre:string = "";
   apellido:string=""
   mensaje = '';
+  cargo:string="";
   registrado = false;
   entradas ;
 

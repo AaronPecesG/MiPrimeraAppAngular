@@ -4,14 +4,23 @@
 
   <input type="text" name="nombre" [(ngModel)]="nombre"><br/>
   <input type="text" name="apellido" [(ngModel)]="apellido"><br/>
+  <input type="text" name="cargo" [(ngModel)]="cargo"><br/>
   <input type="submit" value="Registrar" (click)="registrarUsuario()">
 
 </form>
 
 <br/>
 
-<p *ngIf="registrado; else sinRegistrar">{{mensaje}} con el nombre de {{nombre}} {{apellido}}</p>
+<p *ngIf="registrado; else sinRegistrar">{{mensaje}} con el nombre de {{nombre}} {{apellido}}
+  y tiene el cargo de <span [ngClass]="{paraDirectores: cargo=='director'}"> {{cargo}}</span></p>
+  <!--
+  <p *ngIf="registrado; else sinRegistrar">{{mensaje}} con el nombre de {{nombre}} {{apellido}}
+  y tiene el cargo de <span [ngStyle]="{color: cargo=='director' ? 'red' : 'black'}"> {{cargo}}</span></p>
 
+  El operador ternario de la linea anterior comprueba si el cargo es de director, si lo es cambia el color de la
+  fuente a rojo, si no, lo deja en negro.
+  ngClass permite el uso de una hoja de estilos definida en app.component.css
+  -->
 <ng-template #sinRegistrar>
   <p>Nadie registrado</p>
 </ng-template>
