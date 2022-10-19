@@ -16,3 +16,6 @@ en los cuadros de texto y mostrará el resultado.
 - Hacemos binding con cada boton y su respectiva función.
 - Utilizaremos bootstrap. Para ello en angular.json-styles añadimos "node_modules/bootstrap/dist/css/bootstrap.min.css"
 - Añadimos el form dentro de un contenedor.
+
+### Captura
+![image](https://user-images.githubusercontent.com/72492911/196637824-49fc3b4c-4ed5-418b-ab91-16d3b49bc76c.png)
