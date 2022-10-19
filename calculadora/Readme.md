@@ -13,5 +13,6 @@ en los cuadros de texto y mostrará el resultado.
 - En la plantilla html añadimos el title interpolando la propiedad.
 - Lo siguiente es crear el formulario. Para añadimos dos cuadros de texto y un form de tipo submit.
 - Hacemos binding bidireccional entre los cuadros de texto y las variables creadas en la clase. (Banana inBox)
--
-
+- Hacemos binding con cada boton y su respectiva función.
+- Utilizaremos bootstrap. Para ello en angular.json-styles añadimos "node_modules/bootstrap/dist/css/bootstrap.min.css"
+- Añadimos el form dentro de un contenedor.
